@@ -118,7 +118,7 @@ input[type='checkbox']:checked ~ .links{
 .links{
     display: flex;
     padding: 2rem;
-    font-size: 1rem;
+    font-size: 1.23rem;
     margin-left: 5rem;
 }
 .arrows{
