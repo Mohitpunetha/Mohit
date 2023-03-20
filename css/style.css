@@ -478,17 +478,61 @@ border-radius: 2rem;
     transition:  1s ease-out;
     
 }
-.places-detais button{
+/* .places-detais button{
     float:right;
-}
+} */
 .places-detais button{
     border-radius: 2rem;
     background-color: #5B5F62;
     color: #FAF8ED;
     height: 2rem;
     width: 7rem;
+    float:right;
+    text-decoration: none;
+    -webkit-animation: glowing 1500ms infinite;
+    -moz-animation: glowing 1500ms infinite;
+    -o-animation: glowing 1500ms infinite;
+    animation: glowing 1500ms infinite
+
 
 }
+
+
+
+
+@-webkit-keyframes glowing {
+    0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+    50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
+    100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+  }
+  
+  @-moz-keyframes glowing {
+    0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+    50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
+    100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+  }
+  
+  @-o-keyframes glowing {
+    0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+    50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+    100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  }
+  
+  @keyframes glowing {
+    0% {
+        /* background-color: black; */
+        background-color: black;
+        box-shadow: 0 0 3px black;
+    }
+    50% {
+        background-color: red;
+        box-shadow: 0 0 1px black;
+    }
+    100% {
+        background-color: black;
+        box-shadow: 0 0 0px black;
+    }
+  }
 .top-destination{
     
     text-align: center;
@@ -877,6 +921,12 @@ border-radius: 2rem;
   .text{
     animation: blinker 2s linear infinite;
     /* background-color: cyan; */
+    /* -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+  text-align: center;
+  text-decoration: none; */
     
 }
 @keyframes blinker{
@@ -884,6 +934,8 @@ border-radius: 2rem;
   opacity: 01%;
     }  
 }
+
+
 
 .places-detais:hover{
     transform: translate(0,-8rem);
